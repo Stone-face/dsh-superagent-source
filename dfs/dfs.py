@@ -101,7 +101,7 @@ def dfs_path(graph: Graph, start: str, goal: str) -> list[str] | None:
     path = [start]
 
     while stack:
-        vertex, neighbours = stack[-1]
+        neighbours = stack[-1][1]
         for neighbour in neighbours:
             if neighbour == goal:
                 return path + [neighbour]
