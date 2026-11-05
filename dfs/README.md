@@ -69,6 +69,10 @@ Number of islands: 3
 The tests use only the standard library (`unittest`, 20 tests):
 
 ```bash
+# from the repository root
+python3 -m unittest discover -v
+
+# or from this directory
 cd dfs
 python3 -m unittest -v
 ```
